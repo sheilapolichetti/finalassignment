@@ -1,6 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 2px;
+    padding: 2px;
     box-sizing: border-box;
 }
 
@@ -14,8 +14,12 @@ p {
   font-weight: normal;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
-    display: flex;
+    position: absolute;
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
     margin: auto;
@@ -24,6 +28,14 @@ body {
 .main-head {
     display: flex;
     width: 100%;
+}
+
+#logo {
+  display: flex;
+  margin: auto;
+  font-size: 2.5rem;
+  color: #99c9c8;
+  border-style: solid;
 }
 
 nav {
@@ -45,42 +57,81 @@ nav {
   }
   
   nav a {
-    color: white;
+    background-color: none;
+    color: black;
     text-decoration: none;
   }
   
   nav a:hover {
-    background-color: #00B6EF;
-    border-radius: 3rem;
-    padding: 1.5rem 1.5rem
+    background-color: #cbe5cc;
+    border-radius: none;
+    
   }
   
   nav .current {
-    background-color: #00B6EF;
-    padding: 0.8rem 0.8rem;
-    
+    background-color: #ffd8d8;
+    padding: 0.4rem 0.4rem;
+    text-decoration: none;
   }
 
 .container-all {
-    display: flex;
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  letter-spacing: 2px;
+  line-height: 4;
+  
+}
+
+.titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shopnow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99c9c8;
+  border: 5px solid #ffd8d8;
+  text-decoration: none;
+
 }
 
 .cards {
+    display: flex;
     width: 90%;
     margin: auto;
-    display: flex;
     min-height: 50vh;
     align-items: center;
     flex-wrap: wrap;
+    border: 2px solid #99c9c8;
   }
 
   .cards img {
-    max-width: 25%;
+    max-width: 50%;
     margin: 2rem;
     color: white;
   }
   
   .card-icon {
-
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 
+  .popular-items {
+    align-items: center;
+  }
+
+  .items-text {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+  }
+
+  .popular-products {
+    display: flex;
+    justify-content: center;
+  }
