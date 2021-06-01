@@ -4,9 +4,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" href="/styles/styles.css" />
     <title>Document</title>
 </head>
 <body>
+    <header class="main-head">
+        <nav>
+          <h1 id="logo">Sage clothing</h1>
+          <ul>
+            <li><a href="/html/index.html">Home</a></li>
+            <li><a class="current" href="/html/shop.html">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </nav>
+      </header>
+    <section class="popular-items">
+        <p class="items-text">Best selling right now!</p>
+        <div class="popular-products">
+          <div class="cards">
+            <div class="card-icon">
+              <img
+                src="/images/matchingsetsuit2.jpg"
+                alt="model wearing grey suit set"
+              />
+              <a href="#"><button class="shopnow">Add to cart</button></a>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="card-icon">
+              <img
+                src="/images/Summerdress.jpg"
+                alt="model wearing summer dress"
+              />
+              <a href="#"><button class="shopnow">Add to cart</button></a>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="card-icon">
+              <img
+                src="/images/bamboobra.jpg"
+                alt="model wearing black bra and white shirt"
+              />
+              <a href="#"><button class="shopnow">Add to cart</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    <section class="cart-function">
+        <div class="cd-cart cd-cart--empty js-cd-cart">
+          <a href="#0" class="cd-cart__trigger text-replace">
+            Cart
+            <ul class="cd-cart__count"> <!-- cart items count -->
+              <li>0</li>
+              <li>0</li>
+            </ul> <!-- .cd-cart__count -->
+          </a>
+        
+          <div class="cd-cart__content">
+            <div class="cd-cart__layout">
+              <header class="cd-cart__header">
+                <h2>Cart</h2>
+                <span class="cd-cart__undo">Item removed. <a href="#0">Undo</a></span>
+              </header>
+              
+              <div class="cd-cart__body">
+                <ul>
+                  <!-- products added to the cart will be inserted here using JavaScript -->
+                </ul>
+              </div>
+        
+              <footer class="cd-cart__footer">
+                <a href="#0" class="cd-cart__checkout">
+                  <em>Checkout - $<span>0</span>
+                    <svg class="icon icon--sm" viewBox="0 0 24 24"><g fill="none" stroke="currentColor"><line stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="3" y1="12" x2="21" y2="12"/><polyline stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="15,6 21,12 15,18 "/></g>
+                    </svg>
+                  </em>
+                </a>
+              </footer>
+            </div>
+          </div> <!-- .cd-cart__content -->
+        </div> <!-- cd-cart -->
+      </section>
+      <script type="text/javascript" src="/mypage.js"></script>
     
 </body>
 </html>
